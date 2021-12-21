@@ -14,3 +14,7 @@ pip install -r requirements.txt
 # run scripts
 python ./choosen_script.py
 ```
+
+## Resources
+
+- [Eigenvalue/-vector using QR decomposition](https://www.andreinc.net/2021/01/25/computing-eigenvalues-and-eigenvectors-using-qr-decomposition)
