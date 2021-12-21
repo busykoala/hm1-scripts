@@ -32,3 +32,17 @@ def fixed_point_iteration(function, x0, min_error=0.001, max_iteration=3):
 function = lambda x: (math.sin(x)) ** (1/3)
 x0 = 0.9
 pp(fixed_point_iteration(function, x0, min_error=0.0001, max_iteration=10))
+
+
+def check_convergence(derivative, x_dash):
+    """Get konvergenz (x_dash is the solution already!)
+
+    :param derivative: derivative of fixed point function.
+    :param x_dash: solution of x
+    :return: info string
+    """
+    x = derivative(x_dash)
+    if x < 1:
+        return "konvergiert, anziehend"
+    else:
+        return "divergiert, abstossend"
