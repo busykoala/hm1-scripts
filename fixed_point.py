@@ -46,3 +46,6 @@ def check_convergence(derivative, x_dash):
         return "konvergiert, anziehend"
     else:
         return "divergiert, abstossend"
+
+
+# TODO: Banachscher Fixpunktsatz S. 31/32
